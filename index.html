@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Project</title>
+    <link rel="stylesheet" href="./static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="crud">
+        <div class="head">
+            <h1>CRUD</h1>
+            <h3>Product Management System</h3>
+        </div>
+
+        <div class="operations">
+            <input type="text" id="title" placeholder="title">
+            <div class="price">
+                <input onkeyup="calcTotal()" type="number" id="price" placeholder="price">
+                <input onkeyup="calcTotal()" type="number" id="taxes" placeholder="taxes">
+                <input onkeyup="calcTotal()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="calcTotal()" type="number" id="discount" placeholder="discount">
+                <small id="total"></small>
+                <!-- <button type="button">Total:</button> -->
+            </div>
+            
+            <input type="number" placeholder="count" id="count">
+            <input type="text" placeholder="category" id="category">
+    
+
+            <button type="button" onclick="create()" id="crBtn">Create</button>
+        </div>
+    
+
+        <div class="outputs">
+            <div class="search-Container">
+                <input type="search" placeholder="search" id="search">
+                <div class="search-button" id="srBtn">
+                    <button type="button" id="searchTitle">Search By Title</button>
+                    <button type="button" id="searchCategory">Search By category</button>
+                </div>
+            </div>
+            <div id="deleteAll"></div>
+            <table id="myTable">
+                <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>PRICE</th>
+                    <th>TAXES</th>
+                    <th>ADS</th>
+                    <th>DISCOUNT</th>
+                    <th>TOTAL</th>
+                    <th>CATEGORY</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+                <tbody id="tBody">
+                </tbody>
+                
+            </table>
+        </div>
+        
+        
+    </div>
+
+    
+
+    <script src="./static/script.js"></script>
+</body>
+
+</html>
