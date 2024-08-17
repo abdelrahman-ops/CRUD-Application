@@ -40,10 +40,11 @@
 
         <div class="outputs">
             <div class="search-Container">
-                <input type="search" placeholder="search" id="search">
+                <input onkeyup="searchData(this.value)" type="search" placeholder="search" id="search">
                 <div class="search-button" id="srBtn">
-                    <button type="button" id="searchTitle">Search By Title</button>
-                    <button type="button" id="searchCategory">Search By category</button>
+                    <button onclick="getSearchMood(this.id)" type="button" id="searchTitle">Search By Title</button>
+                    <button onclick="getSearchMood(this.id)" type="button" id="searchCategory">Search By
+                        category</button>
                 </div>
             </div>
             <div id="deleteAll"></div>
@@ -68,8 +69,6 @@
         
         
     </div>
-
-    
 
     <script src="./static/script.js"></script>
 </body>
