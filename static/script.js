@@ -23,7 +23,7 @@ function calcTotal() {
     }
     else {
         total.innerHTML = '';
-        total.style.background = 'red'
+        total.style.background = '#A31621'
     }
 
 }
@@ -118,7 +118,7 @@ function showData() {
 
     let btnDelete = document.getElementById('deleteAll');
     if (proData.length > 0) {
-        btnDelete.innerHTML = `<button onclick="deleteAll()">Delete All (${proData.length})</button>`
+        btnDelete.innerHTML = `<button id="deleteall" onclick="deleteAll()">Delete All (${proData.length})</button>`
     }
     else {
         btnDelete.innerHTML = '';

@@ -4,9 +4,9 @@
 }
 
 body {
-    font-family: "Noto Sans", sans-serif;
-    background-color: #333;
-    color: #fff;
+    font-family: "Roboto Slab", serif;
+    background-color: #161B22;
+    color: #F8F9FA;
 }
 
 .crud{
@@ -27,14 +27,14 @@ input{
     outline: none;
     border: none;
     
-    background-color: #111;
-    color: #fff;
+    background-color: #343A40;
+    color: #FFFFFF;
     margin: 4px 0;
     padding: 4px;
     border-radius: 5px;
 }
 input:focus{
-    background-color: #000;
+    background-color: #000000;
     transform: scale(1.1);
 }
 
@@ -48,6 +48,7 @@ input:focus{
 }
 #total::before{
     content: 'Total: ';
+    color: #F8F9FA;
 }
 
 button{
@@ -82,10 +83,18 @@ table{
     width: 100%;
     text-align: center;
     margin: 10px 0;
+    /* border-collapse: collapse; */
+    border-radius: 30px;
 }
 
 th,td{
     padding: 5px;
+    border-radius: 30px;
+}
+
+table, td ,th{
+    /* border: 1px solid black; */
+    border-radius: 30px;
 }
 
 
@@ -93,8 +102,28 @@ th,td{
 
 
 
+#search{
+    margin-bottom: 20px;
+}
+#update{
+    background-color: #3A6146;
+}
+#delete{
+    background-color: #FCA311;
+}
+#deleteall{
+    background-color: #A31621;
+}
 
+#searchCategory , #searchTitle{
+    margin-top: 20px 0;
+    background-color: #BB8628;
+}
 
+#crBtn{
+    margin: 20px 0;
+    background-color: #BB8628;
+}
 
 
 
@@ -127,18 +156,6 @@ th,td{
 .search-button button {
     width: 100%;
     border-radius: 20px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, td {
-    border: 1px solid black;
-}
-
-td {
-    padding: 10px;
-    text-align: left;
 } */
+
+
